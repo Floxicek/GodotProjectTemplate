@@ -21,6 +21,10 @@ config/icon="res://icon.png"
 
 SceneManager="*res://scenes/SceneManager.tscn"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/anthonyec.camera_preview/plugin.cfg")
+
 [file_customization]
 
 folder_colors={

@@ -12,7 +12,10 @@ func _input(event):
 
 func _change_scene():
 	await get_tree().create_timer(.1).timeout
-	get_tree().change_scene_to_packed(start_screen)
+	if start_screen:
+		get_tree().change_scene_to_packed(start_screen)
+	else:
+		printerr("Start screen scene is not setup in BootSplash")
 
 func _fade_out():
 	var tween = create_tween()

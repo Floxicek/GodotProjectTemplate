@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://d4nhllcyla0id"]
+[gd_scene load_steps=3 format=3 uid="uid://d4nhllcyla0id"]
 
 [ext_resource type="Script" path="res://scripts/BootSplash.gd" id="1_o0hfv"]
 [ext_resource type="Texture2D" uid="uid://cdj8ee23txeg2" path="res://assets/cog-dark.png" id="2_ow8wf"]
-[ext_resource type="PackedScene" uid="uid://k57ndednulvv" path="res://start.tscn" id="2_veubu"]
 
 [node name="BootSplash" type="Control"]
 layout_mode = 3
@@ -12,7 +11,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_o0hfv")
-start_screen = ExtResource("2_veubu")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
